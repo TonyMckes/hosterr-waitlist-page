@@ -1,0 +1,68 @@
+---
+import helpAvatar from '../assets/Help Avatar.svg'
+import Link from '../components/Link.astro'
+---
+
+<footer class='container'>
+  <ul class='socials'>
+    <li>
+      <Link>Facebook</Link>
+    </li>
+    <li>
+      <Link>Instagram</Link>
+    </li>
+    <li>
+      <Link>Twitter</Link>
+    </li>
+  </ul>
+  <div class='support'>
+    <img src={helpAvatar} alt='Help avatar' />
+    <div>
+      <p>Have any questions?</p>
+      <a href='javascript:void(0);'>Talk to a specialist</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .socials a {
+    font-weight: 400;
+  }
+  .support {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .support img {
+    width: 2.5rem;
+    height: auto;
+  }
+  .support p {
+    margin: 0;
+  }
+  .support a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+  }
+  .support a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 768px) {
+    footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+</style>

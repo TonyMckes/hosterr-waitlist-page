@@ -1,6 +1,7 @@
 ---
 import '@fontsource/lato'
 import '@fontsource/playfair-display'
+import Footer from '../components/Footer.astro'
 import Navbar from '../components/Navbar.astro'
 
 export interface Props {
@@ -22,6 +23,7 @@ const { title } = Astro.props
   <body>
     <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
