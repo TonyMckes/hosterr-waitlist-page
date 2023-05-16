@@ -1,6 +1,12 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@fontsource/lato':
+    specifier: ^4.5.10
+    version: 4.5.10
+  '@fontsource/playfair-display':
+    specifier: ^4.5.13
+    version: 4.5.13
   astro:
     specifier: ^2.4.1
     version: 2.4.1
@@ -534,6 +540,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/lato@4.5.10:
+    resolution: {integrity: sha512-2hYR6r661Cq9B8zugtu6yxuOKqrVhAgfOSaPSq8XoxbC4ebsl0KOTy/vPoP+9U7JuQVLfrmikirW4a9Z0nDUug==}
+    dev: false
+
+  /@fontsource/playfair-display@4.5.13:
+    resolution: {integrity: sha512-41yD3XW8jATcZO8E2U6Xe9MIaogPdjrGkC4ixNzAIdrR3BvLxXpeHU2xw3rwIq8aHhFUYwLnE6Lq+BWSTZZH9w==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
