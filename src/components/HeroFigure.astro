@@ -1,0 +1,46 @@
+---
+import heroModel from '../assets/Hero Image (Model).png'
+import blueShape from '../assets/Blue Shape.svg'
+import pinkShape from '../assets/Pink Shape.svg'
+import purpleShape from '../assets/Purple Shape.svg'
+---
+
+<div class='hero-shape'>
+  <img class='hero-model' src={heroModel} alt='Hero model' />
+  <img
+    aria-hidden='true'
+    class='purple shape'
+    src={purpleShape}
+    alt='Purple Share'
+  />
+  <img aria-hidden='true' class='pink shape' src={pinkShape} alt='Pink Shape' />
+  <img aria-hidden='true' class='blue shape' src={blueShape} alt='Blue Shape' />
+</div>
+
+<style>
+  .hero-shape {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .shape,
+  .hero-model {
+    grid-area: 1 / 1 / 2 / 2;
+    pointer-events: none;
+  }
+  .hero-model {
+    z-index: 5;
+  }
+  .purple {
+    z-index: 4;
+    rotate: 345deg;
+  }
+  .pink {
+    z-index: 3;
+    rotate: 330deg;
+  }
+  .blue {
+    z-index: 2;
+    rotate: 315deg;
+  }
+</style>
